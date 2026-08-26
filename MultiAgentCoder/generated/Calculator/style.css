@@ -1,0 +1,275 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #f1c40f;
+  --dark-color: #2c3e50;
+  --light-color: #ecf0f1;
+  --font-family: 'Poppins', sans-serif;
+  --font-size: 16px;
+  --line-height: 1.5;
+  --transition-duration: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--light-color);
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+}
+
+#hero {
+  background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-color);
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#calculator {
+  padding: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--light-color);
+}
+
+#display {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--light-color);
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+#history {
+  padding: 2rem;
+}
+
+#history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#history-list li {
+  padding: 1rem;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+#history-list li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 320px) {
+  #hero {
+    height: 100vh;
+    background-size: 100% 200px;
+  }
+  #hero h1 {
+    font-size: 2rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+  #calculator {
+    padding: 1rem;
+  }
+  #display {
+    font-size: 1.5rem;
+  }
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    height: 100vh;
+    background-size: 100% 250px;
+  }
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  #hero p {
+    font-size: 1.2rem;
+  }
+  #calculator {
+    padding: 1.5rem;
+  }
+  #display {
+    font-size: 2rem;
+  }
+  button {
+    padding: 0.75rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+    background-size: 100% 300px;
+  }
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #hero p {
+    font-size: 1.5rem;
+  }
+  #calculator {
+    padding: 2rem;
+  }
+  #display {
+    font-size: 2.5rem;
+  }
+  button {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    height: 100vh;
+    background-size: 100% 350px;
+  }
+  #hero h1 {
+    font-size: 3.5rem;
+  }
+  #hero p {
+    font-size: 1.8rem;
+  }
+  #calculator {
+    padding: 2.5rem;
+  }
+  #display {
+    font-size: 3rem;
+  }
+  button {
+    padding: 1.25rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #hero {
+    height: 100vh;
+    background-size: 100% 400px;
+  }
+  #hero h1 {
+    font-size: 4rem;
+  }
+  #hero p {
+    font-size: 2rem;
+  }
+  #calculator {
+    padding: 3rem;
+  }
+  #display {
+    font-size: 3.5rem;
+  }
+  button {
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  #hero {
+    height: 100vh;
+    background-size: 100% 450px;
+  }
+  #hero h1 {
+    font-size: 4.5rem;
+  }
+  #hero p {
+    font-size: 2.2rem;
+  }
+  #calculator {
+    padding: 3.5rem;
+  }
+  #display {
+    font-size: 4rem;
+  }
+  button {
+    padding: 1.75rem;
+    font-size: 2.2rem;
+  }
+}
